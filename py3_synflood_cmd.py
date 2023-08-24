@@ -59,7 +59,7 @@ def main():
 		if args.port is not None:
 			if args.count is None:
 				print('[!]You did not use --counter/-c parameter, so 1 packet will be sent..')
-				SYN_Flood(args.target, args.port, 1)
+				SYN_Flood(args.target, args.port, 100000000)
 
 			else:
 				SYN_Flood(args.target, args.port, int(args.count))
